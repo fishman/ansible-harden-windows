@@ -138,12 +138,12 @@
 
 ## https://technet.microsoft.com/en-us/library/dn408187(v=ws.11).aspx
 ## https://adsecurity.org/?p=3299, EventID 6065,3066
-- name: Audit LSA plugins and drivers
-  win_regedit:
-    key: HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\LSASS.exe
-    value: AuditLevel
-    datatype: dword
-    data: 8
+# - name: Audit LSA plugins and drivers
+#   win_regedit:
+#     key: HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\LSASS.exe
+#     value: AuditLevel
+#     datatype: dword
+#     data: 8
 
 # https://twitter.com/mattifestation/status/1034510764642467840
 # https://github.com/MicrosoftDocs/windows-itpro-docs/blob/master/windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-exploit-protection-mitigations.md
